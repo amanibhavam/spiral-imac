@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: imac--cilium
+  namespace: argocd
+spec:
+  project: imac
+  source:
+    repoURL: 'https://github.com/amanibhavam/spiral-imac'
+    path: cilium
+    targetRevision: 0.0.1
+  destination:
+    name: imac
+    namespace: cilium
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
