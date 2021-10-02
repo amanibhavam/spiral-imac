@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/amanibhavam/spiral-imac'
     path: cilium
-    targetRevision: 0.0.1
+    targetRevision: master
   destination:
     name: imac
     namespace: cilium
