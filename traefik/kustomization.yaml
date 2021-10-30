@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: traefik-imac
 
 resources:
-  - https://github.com/letfn/katt-traefik/relay?ref=0.0.27
+  - https://github.com/letfn/katt-traefik/relay?ref=0.0.28
   - ingress.yaml
 
 patches:
